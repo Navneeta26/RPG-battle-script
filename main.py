@@ -58,11 +58,6 @@ while running:
         player.get_stats()
 
     print("\n")
-    
-    player.choose_action()
-    print("Enter 0 to exit")
-    choice = input("Choose Action:")
-    index = int(choice) - 1
 
     for enemy in enemies:
         enemy.get_enemy_stats()
@@ -70,6 +65,7 @@ while running:
     for player in players:
 
         player.choose_action()
+          print("Enter 0 to exit")
         choice = input("    Choose action: ")
         index = int(choice) - 1
 
